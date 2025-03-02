@@ -20,4 +20,5 @@ perfectly. Use it at your own risk.
   - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
   - [markdown](https://github.com/tree-sitter-grammars/tree-sitter-markdown)
   - [rust](https://github.com/tree-sitter/tree-sitter-rust)
+  - [sql](https://github.com/derekstride/tree-sitter-sql)
   - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)

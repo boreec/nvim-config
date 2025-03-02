@@ -7,7 +7,11 @@ return {
 
       configs.setup({
 	  -- The listed parsers MUST always be installed
-          ensure_installed = { "go", "lua", "markdown", "markdown_inline" },
+          ensure_installed = {
+	    "go", "gomod", "gosum", "gotmpl", "gowork",
+	    "lua",
+	    "markdown", "markdown_inline"
+	  },
 	  -- Install parsers synchronously (only applied to `ensure_installed`)
           sync_install = false,
           highlight = { enable = true },

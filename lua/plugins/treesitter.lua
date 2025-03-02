@@ -10,6 +10,7 @@ return {
           ensure_installed = {
 	    "go", "gomod", "gosum", "gotmpl", "gowork",
 	    "graphql",
+	    "json",
 	    "lua",
 	    "markdown", "markdown_inline"
 	  },

@@ -12,7 +12,8 @@ return {
 	    "graphql",
 	    "json",
 	    "lua",
-	    "markdown", "markdown_inline"
+	    "markdown", "markdown_inline",
+	    "yaml"
 	  },
 	  -- Install parsers synchronously (only applied to `ensure_installed`)
           sync_install = false,

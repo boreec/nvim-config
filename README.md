@@ -19,3 +19,4 @@ perfectly. Use it at your own risk.
   - [json](https://github.com/tree-sitter/tree-sitter-json)
   - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
   - [markdown](https://github.com/tree-sitter-grammars/tree-sitter-markdown)
+  - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)

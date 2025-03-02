@@ -17,6 +17,7 @@ return {
 	    "rust",
 	    "sql",
 	    "typescript",
+	    "xml",
 	    "yaml"
 	  },
 	  -- Install parsers synchronously (only applied to `ensure_installed`)

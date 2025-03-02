@@ -15,6 +15,7 @@ return {
 	    "markdown", "markdown_inline",
 	    "rust",
 	    "sql",
+	    "typescript",
 	    "yaml"
 	  },
 	  -- Install parsers synchronously (only applied to `ensure_installed`)

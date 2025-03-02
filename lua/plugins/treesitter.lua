@@ -12,6 +12,7 @@ return {
 	    "graphql",
 	    "json",
 	    "lua",
+	    "make",
 	    "markdown", "markdown_inline",
 	    "python",
 	    "proto",

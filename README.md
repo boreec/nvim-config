@@ -18,6 +18,7 @@ perfectly. Use it at your own risk.
   - [graphql](https://github.com/bkegley/tree-sitter-graphql)
   - [json](https://github.com/tree-sitter/tree-sitter-json)
   - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
+  - [make](https://github.com/alemuller/tree-sitter-make)
   - [markdown](https://github.com/tree-sitter-grammars/tree-sitter-markdown)
   - [proto](https://github.com/treywood/tree-sitter-proto)
   - [python](https://github.com/tree-sitter/tree-sitter-python)

@@ -15,5 +15,6 @@ perfectly. Use it at your own risk.
      [gomod](https://github.com/camdencheek/tree-sitter-go-mod),
      [gosum](https://github.com/tree-sitter-grammars/tree-sitter-go-sum),
      [gowork](https://github.com/omertuc/tree-sitter-go-work)
+  - [graphql](https://github.com/bkegley/tree-sitter-graphql)
   - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
   - [markdown](https://github.com/tree-sitter-grammars/tree-sitter-markdown)

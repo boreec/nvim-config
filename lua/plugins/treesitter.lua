@@ -9,6 +9,7 @@ return {
 	  -- The listed parsers MUST always be installed
           ensure_installed = {
 	    "go", "gomod", "gosum", "gotmpl", "gowork",
+	    "graphql",
 	    "lua",
 	    "markdown", "markdown_inline"
 	  },

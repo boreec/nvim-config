@@ -13,6 +13,7 @@ return {
 	    "json",
 	    "lua",
 	    "markdown", "markdown_inline",
+	    "rust",
 	    "yaml"
 	  },
 	  -- Install parsers synchronously (only applied to `ensure_installed`)

@@ -19,6 +19,7 @@ perfectly. Use it at your own risk.
   - [json](https://github.com/tree-sitter/tree-sitter-json)
   - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
   - [markdown](https://github.com/tree-sitter-grammars/tree-sitter-markdown)
+  - [proto](https://github.com/treywood/tree-sitter-proto)
   - [python](https://github.com/tree-sitter/tree-sitter-python)
   - [rust](https://github.com/tree-sitter/tree-sitter-rust)
   - [sql](https://github.com/derekstride/tree-sitter-sql)

@@ -14,6 +14,7 @@ return {
 	    "lua",
 	    "markdown", "markdown_inline",
 	    "python",
+	    "proto",
 	    "rust",
 	    "sql",
 	    "toml",

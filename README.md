@@ -11,6 +11,7 @@ perfectly. Use it at your own risk.
   inspired by the colors of the famous painting by Katsushika Hokusai.
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter):
   Treesitter configurations and abstraction layer, configured for:
+  - [cpp](https://github.com/tree-sitter/tree-sitter-cpp)
   - [dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile)
   - [gitignore](https://github.com/shunsambongi/tree-sitter-gitignore)
   - [go](https://github.com/tree-sitter/tree-sitter-go),

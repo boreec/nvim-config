@@ -33,3 +33,5 @@ perfectly. Use it at your own risk.
   - [typescript](https://github.com/tree-sitter/tree-sitter-typescript)
   - [xml](https://github.com/tree-sitter-grammars/tree-sitter-xml)
   - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim): fuzzy finder
+  for files, live grep, in-buffers, etc.

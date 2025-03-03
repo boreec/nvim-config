@@ -10,6 +10,10 @@ vim.opt.clipboard = "unnamedplus"
 -- vertical rulers at column 80 and 100
 vim.opt.colorcolumn = "80,100"
 
+-- display line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
+
 -- display trailing whitespaces
 vim.opt.list = true
 vim.opt.listchars:append('space:⋅')

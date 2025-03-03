@@ -7,5 +7,5 @@ vim.g.maplocalleader = "\\"
 -- allows neovim to access system clipboard on linux
 vim.opt.clipboard = "unnamedplus"
 
--- vertical rulers at column 80 and 120
+-- vertical rulers at column 80 and 100
 vim.opt.colorcolumn = "80,100"

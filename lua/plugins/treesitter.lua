@@ -8,7 +8,7 @@ return {
       configs.setup({
 	  -- The listed parsers MUST always be installed
           ensure_installed = {
-	    "cpp",
+	    "c", "cpp",
 	    "dockerfile",
 	    "gitignore",
 	    "go", "gomod", "gosum", "gotmpl", "gowork",

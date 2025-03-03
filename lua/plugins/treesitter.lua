@@ -30,8 +30,11 @@ return {
 	  -- Install parsers synchronously (only applied to `ensure_installed`)
           sync_install = false,
           highlight = { enable = true },
-          indent = { enable = true },  
+	  additional_vim_regex_highlighting = false,
+          indent = { enable = true }
         })
+    -- Remove the undercul for markdown links
+    vim.api.nvim_set_hl(0, "@markup.link.url.markdown_inline", { undercurl = false })
     end
   }
 }

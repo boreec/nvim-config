@@ -28,10 +28,26 @@ formatters.
 
 ### Plugin manager
 
-The plugins are handled by [lazy.nvim](https://github.com/folke/lazy.nvim).
+The plugins are managed using [lazy.nvim](https://github.com/folke/lazy.nvim).
+The configuration follows the structure recommended by the official
+documentation:
 
-The configuration is organized with the same structure as recommended by
-the official documentation.
+```text
+.
+├── init.lua                 # Entry point for loading the Lua files
+├── lua                      # Directory containing all Lua files
+│   ├── config               # Subdirectory with the main Neovim configuration
+│   │   ├── lazy.lua         # lazy.nvim setup
+│   │   └── options.lua      # Configuration for vim.opt settings
+│   └── plugins              # Subdirectory for plugins
+│       ├── colorscheme.lua  # Plugins for colorscheme themes
+│       ├── formatter.lua    # Plugins for configuring languages formatter
+│       ├── lsp.lua          # Plugins for setting up LSPs
+│       ├── telescope.lua    # Plugin for fuzzy finding and searching
+│       └── treesitter.lua   # Plugins for language syntax highlighting
+├── stylua.toml              # Formatting options for Lua files in the repository
+└── README.md                # You are here
+```
 
 ### Colorscheme
 

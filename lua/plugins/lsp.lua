@@ -9,7 +9,9 @@ return {
     'williamboman/mason-lspconfig.nvim',
     config = function()
       require('mason-lspconfig').setup({
-        ensure_installed = { 'lua_ls' },
+        ensure_installed = {
+          'lua_ls',
+        },
       })
     end,
     event = { 'BufReadPre', 'BufNewFile' },
@@ -29,5 +31,18 @@ return {
         },
       })
     end,
+  },
+  {
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    config = function()
+      require('mason-tool-installer').setup({
+        ensure_installed = {
+          'taplo',
+          'stylua',
+          'sql-formatter',
+        },
+      })
+    end,
+    dependencies = { 'williamboman/mason.nvim' },
   },
 }

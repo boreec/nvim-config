@@ -57,6 +57,7 @@ LSPs are handled by the combination of plugins:
 
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
+- [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
@@ -70,6 +71,8 @@ Language formatting is handled by
 Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
  and offer support for:
 - lua via `stylua` (this repository uses `/stylua.toml`)
+- toml via `taplo`
+- sql via `sql-formatter`
 
 ### Searching
 

@@ -4,6 +4,26 @@ This repository contains my personal neovim setup. While I strive to keep it
 clean and functional, I can not guarantee that everything will always work
 perfectly. Use it at your own risk.
 
+## How to use
+
+Backup your existing nvim config (optional):
+
+```console
+mv ~/.config/nvim ~/nvim-backup
+```
+
+Clone this repository to the nvim directory:
+
+```console
+git clone --depth 1 https://github.com/boreec/nvim-config ~/.config/nvim
+```
+
+Open neovim, and run `:Lazy`, follow the screen instructions to update and sync
+the plugins.
+
+When reopening neovim, Mason should automatically fetch the LSPs, linters and
+formatters.
+
 ## Contents
 
 ### Plugin manager

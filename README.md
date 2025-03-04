@@ -22,6 +22,8 @@ It is configured in `lua/plugins/colorscheme.lua`.
 
 ### Languages support
 
+#### Syntax highlighting
+
 Language syntax highlighting is handled by
  [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
  and configured for:
@@ -49,13 +51,25 @@ Language syntax highlighting is handled by
 - [xml](https://github.com/tree-sitter-grammars/tree-sitter-xml)
 - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)
 
+#### LSP (Language Server Protocol)
+
 LSPs are handled by the combination of plugins:
+
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-It is configured in `lua/plugins/lsp.lua` and offers support for:
-- lua with the LSP `lua_ls`
+LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
+- lua via `lua_ls`
+
+#### Formatting
+
+Language formatting is handled by
+ [conform.nvim](https://github.com/stevearc/conform.nvim).
+
+Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
+ and offer support for:
+- lua via `stylua`
 
 ### Searching
 

@@ -20,7 +20,14 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("lspconfig").lua_ls.setup({})
+      require("lspconfig").lua_ls.setup({
+        settings = {
+          Lua = {
+	    -- prevent warnings by recognizing vim as a global variable
+	    diagnostics = { globals = { "vim" } }
+	  }
+	}
+      })
     end
   }
 }

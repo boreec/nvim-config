@@ -25,7 +25,9 @@ return {
     dependencies = { 'saghen/blink.cmp' },
     opts = {
       servers = {
-        gopls = {},
+        gopls = {
+          gofumpt = true,
+        },
         lua_ls = {
           settings = {
             Lua = {
@@ -51,6 +53,7 @@ return {
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
+          'gofumpt',
           'taplo',
           'stylua',
           'sql-formatter',

@@ -41,6 +41,7 @@ documentation:
 │   │   └── options.lua      # Configuration for vim.opt settings
 │   └── plugins              # Subdirectory for plugins
 │       ├── colorscheme.lua  # Plugins for colorscheme themes
+│       ├── completetion.lua # Plugins for word completions
 │       ├── formatter.lua    # Plugins for configuring languages formatter
 │       ├── lsp.lua          # Plugins for setting up LSPs
 │       ├── telescope.lua    # Plugin for fuzzy finding and searching
@@ -110,6 +111,13 @@ Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
 - lua via `stylua` (this repository uses `/stylua.toml`)
 - toml via `taplo`
 - sql via `sql-formatter`
+
+#### Completion
+
+Syntax completion is managed by the plugin
+ [blink.cmp](https://github.com/saghen/blink.cmp) and configured in
+ `lua/plugins/completion.lua`. It uses LSPs, snippets, filesystem paths and
+ buffers as a source.
 
 ### Searching
 

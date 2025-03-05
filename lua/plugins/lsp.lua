@@ -10,6 +10,7 @@ return {
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
+          'gopls',
           'lua_ls',
         },
       })
@@ -30,6 +31,7 @@ return {
           },
         },
       })
+      require('lspconfig').gopls.setup({})
     end,
   },
   {

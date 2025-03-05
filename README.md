@@ -38,6 +38,7 @@ documentation:
 ├── lua                      # Directory containing all Lua files
 │   ├── config               # Subdirectory with the main Neovim configuration
 │   │   ├── lazy.lua         # lazy.nvim setup
+│   │   ├── mappings.lua     # All key mappings
 │   │   └── options.lua      # Configuration for vim.opt settings
 │   └── plugins              # Subdirectory for plugins
 │       ├── colorscheme.lua  # Plugins for colorscheme themes

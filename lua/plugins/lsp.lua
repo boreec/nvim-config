@@ -10,8 +10,10 @@ return {
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
+          'jsonls',
           'gopls',
           'lua_ls',
+          'ts_ls',
         },
       })
     end,
@@ -25,6 +27,7 @@ return {
     dependencies = { 'saghen/blink.cmp' },
     opts = {
       servers = {
+        jsonls = {},
         gopls = {
           gofumpt = true,
         },
@@ -36,6 +39,7 @@ return {
             },
           },
         },
+        ts_ls = {},
       },
     },
     config = function(_, opts)
@@ -53,6 +57,7 @@ return {
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
+          'jsonls',
           'gofumpt',
           'taplo',
           'stylua',

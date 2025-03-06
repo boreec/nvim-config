@@ -99,8 +99,10 @@ LSPs are handled by the combination of plugins:
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
+- json via `jsonls`
 - go via `gopls`
 - lua via `lua_ls`
+- typescript via `ts_ls`
 
 #### Formatting
 

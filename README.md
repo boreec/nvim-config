@@ -54,7 +54,7 @@ documentation:
 ### Colorscheme
 
 The main colorscheme is `kanagawa-wave` from
- [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim).
+[kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim).
 
 It is configured in `lua/plugins/colorscheme.lua`.
 
@@ -63,18 +63,18 @@ It is configured in `lua/plugins/colorscheme.lua`.
 #### Syntax highlighting
 
 Language syntax highlighting is handled by
- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
- and configured for:
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+and configured for:
 
 - [bash](https://github.com/tree-sitter/tree-sitter-bash)
 - [c](https://github.com/tree-sitter/tree-sitter-c),
- [cpp](https://github.com/tree-sitter/tree-sitter-cpp)
+  [cpp](https://github.com/tree-sitter/tree-sitter-cpp)
 - [dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile)
 - [gitignore](https://github.com/shunsambongi/tree-sitter-gitignore)
 - [go](https://github.com/tree-sitter/tree-sitter-go),
- [gomod](https://github.com/camdencheek/tree-sitter-go-mod),
- [gosum](https://github.com/tree-sitter-grammars/tree-sitter-go-sum),
- [gowork](https://github.com/omertuc/tree-sitter-go-work)
+  [gomod](https://github.com/camdencheek/tree-sitter-go-mod),
+  [gosum](https://github.com/tree-sitter-grammars/tree-sitter-go-sum),
+  [gowork](https://github.com/omertuc/tree-sitter-go-work)
 - [graphql](https://github.com/bkegley/tree-sitter-graphql)
 - [json](https://github.com/tree-sitter/tree-sitter-json)
 - [lua](https://github.com/tree-sitter-grammars/tree-sitter-lua)
@@ -99,6 +99,7 @@ LSPs are handled by the combination of plugins:
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
+
 - json via `jsonls`
 - go via `gopls`
 - graphql via `graphql-language-service-cli` (a root configuration is required
@@ -109,14 +110,16 @@ LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
 #### Formatting
 
 Language formatting is handled by
- [conform.nvim](https://github.com/stevearc/conform.nvim).
+[conform.nvim](https://github.com/stevearc/conform.nvim).
 
 Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
- and offer support for:
+and offer support for:
+
 - go with `gofumpt`
 - graphql with `prettier`
 - json with `prettier`
 - lua with `stylua` (this repository uses `stylua.toml`)
+- markdown with `prettier`
 - toml with `taplo`
 - typescript with `prettier`
 - sql with `sql-formatter`
@@ -124,9 +127,9 @@ Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
 #### Completion
 
 Syntax completion is managed by the plugin
- [blink.cmp](https://github.com/saghen/blink.cmp) and configured in
- `lua/plugins/completion.lua`. It uses LSPs, snippets, filesystem paths and
- buffers as a source.
+[blink.cmp](https://github.com/saghen/blink.cmp) and configured in
+`lua/plugins/completion.lua`. It uses LSPs, snippets, filesystem paths and
+buffers as a source.
 
 ### Searching
 

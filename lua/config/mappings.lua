@@ -1,5 +1,3 @@
-local telescope = require('telescope.builtin')
-
 -- Common options for mappings
 local opt = { noremap = true, silent = true }
 
@@ -12,6 +10,7 @@ vim.keymap.set('n', '<leader>fr', function()
 end, opt)
 
 -- === Telescope Mappings (Always Available) ===
+local telescope = require('telescope.builtin')
 local telescope_mappings = {
   ['<leader>ff'] = telescope.find_files,
   ['<leader>fg'] = telescope.live_grep,

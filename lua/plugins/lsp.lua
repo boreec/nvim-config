@@ -11,6 +11,7 @@ return {
       require('mason-lspconfig').setup({
         ensure_installed = {
           'gopls',
+          'graphql',
           'jsonls',
           'lua_ls',
           'ts_ls',
@@ -25,11 +26,13 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
+    version = 'v1.7.0',
     opts = {
       servers = {
         gopls = {
           gofumpt = true,
         },
+        graphql = {},
         jsonls = {},
         lua_ls = {
           settings = {

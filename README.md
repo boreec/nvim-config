@@ -111,10 +111,12 @@ Language formatting is handled by
 
 Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
  and offer support for:
-- go via `gofumpt`
-- lua via `stylua` (this repository uses `/stylua.toml`)
-- toml via `taplo`
-- sql via `sql-formatter`
+- go with `gofumpt`
+- json with `prettier`
+- lua with `stylua` (this repository uses `stylua.toml`)
+- toml with `taplo`
+- typescript with `prettier`
+- sql with `sql-formatter`
 
 #### Completion
 

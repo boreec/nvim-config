@@ -6,9 +6,11 @@ return {
       require('conform').setup({
         formatters_by_ft = {
           go = { 'gofumpt' },
+          json = { 'prettier' },
           lua = { 'stylua' },
-          toml = { 'taplo' },
           sql = { 'sql_formatter' },
+          toml = { 'taplo' },
+          typescript = { 'prettier' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

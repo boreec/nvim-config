@@ -6,6 +6,7 @@ return {
       require('conform').setup({
         formatters_by_ft = {
           go = { 'gofumpt' },
+          graphql = { 'prettier' },
           json = { 'prettier' },
           lua = { 'stylua' },
           sql = { 'sql_formatter' },

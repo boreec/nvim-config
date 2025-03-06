@@ -101,6 +101,8 @@ LSPs are handled by the combination of plugins:
 LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
 - json via `jsonls`
 - go via `gopls`
+- graphql via `graphql-language-service-cli` (a root configuration is required
+  in the project)
 - lua via `lua_ls`
 - typescript via `ts_ls`
 
@@ -112,6 +114,7 @@ Language formatting is handled by
 Formatters are installed via mason, configured in `lua/plugins/formatter.lua`
  and offer support for:
 - go with `gofumpt`
+- graphql with `prettier`
 - json with `prettier`
 - lua with `stylua` (this repository uses `stylua.toml`)
 - toml with `taplo`

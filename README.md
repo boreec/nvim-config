@@ -1,5 +1,17 @@
 # Neovim Configuration
 
+- [Neovim Configuration](#neovim-configuration)
+  - [How to use](#how-to-use)
+  - [Contents](#contents)
+    - [Plugin manager](#plugin-manager)
+    - [Colorscheme](#colorscheme)
+    - [Languages support](#languages-support)
+      - [Syntax highlighting](#syntax-highlighting)
+      - [LSP (Language Server Protocol)](#lsp-language-server-protocol)
+      - [Formatting](#formatting)
+      - [Completion](#completion)
+    - [Searching](#searching)
+
 This repository contains my personal neovim setup. While I strive to keep it
 clean and functional, I can not guarantee that everything will always work
 perfectly. Use it at your own risk.

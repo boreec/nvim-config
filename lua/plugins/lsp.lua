@@ -14,6 +14,7 @@ return {
           'graphql',
           'jsonls',
           'lua_ls',
+          'marksman',
           'ts_ls',
         },
       })
@@ -42,6 +43,7 @@ return {
             },
           },
         },
+        marksman = {},
         ts_ls = {},
       },
     },

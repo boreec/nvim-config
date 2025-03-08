@@ -1,9 +1,13 @@
-# Neovim Configuration
+# ✨ Neovim Configuration
 
-- [How to use](#how-to-use)
-- [Contents](#contents)
+This repository contains my personal neovim setup. While I strive to keep it
+clean and functional, I can not guarantee that everything will always work
+perfectly. Use it at your own risk.
+
+- [How to use](#🚀-how-to-use)
+- [Contents](#📦-contents)
 - [Plugin manager](#plugin-manager)
-- [Colorscheme](#colorscheme)
+- [Colorscheme](#🎨-colorscheme)
 - [Languages support](#languages-support)
   - [Syntax highlighting](#syntax-highlighting)
   - [LSP (Language Server Protocol)](#lsp-language-server-protocol)
@@ -11,11 +15,7 @@
   - [Completion](#completion)
 - [Searching](#searching)
 
-This repository contains my personal neovim setup. While I strive to keep it
-clean and functional, I can not guarantee that everything will always work
-perfectly. Use it at your own risk.
-
-## How to use
+## 🚀 How to use
 
 Backup your existing nvim config (optional):
 
@@ -35,7 +35,7 @@ the plugins.
 When reopening neovim, Mason should automatically fetch the LSPs, linters and
 formatters.
 
-## Contents
+## 📦 Contents
 
 ### Plugin manager
 
@@ -62,7 +62,7 @@ documentation:
 └── README.md                # You are here
 ```
 
-### Colorscheme
+### 🎨 Colorscheme
 
 The main colorscheme is `github_dark` from
 [github nvim themes](https://github.com/projekt0n/github-nvim-theme) and is
@@ -135,12 +135,14 @@ and offer support for:
 - toml with `taplo`
 - typescript with `prettier`
 
+The formatter are ran automatically when saving the buffer.
+
 #### Completion
 
 Syntax completion is managed by the plugin
 [blink.cmp](https://github.com/saghen/blink.cmp) and configured in
-`lua/plugins/completion.lua`. It uses LSPs, snippets, filesystem paths and
-buffers as a source.
+`lua/plugins/completion.lua`. For now only the LSP is used as a completion
+source.
 
 ### Searching
 

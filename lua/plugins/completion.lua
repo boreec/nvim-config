@@ -1,13 +1,17 @@
 return {
   {
     'saghen/blink.cmp',
-    version = 'v0.13.1',
     opts = {
+      completion = {
+        documentation = { auto_show = true, auto_show_delay_ms = 250 },
+      },
+      fuzzy = { implementation = 'prefer_rust_with_warning' },
       keymap = { preset = 'enter' },
+      signature = { enabled = true, window = { show_documentation = false } },
+      sources = {
+        default = { 'lsp' },
+      },
     },
-    sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
-    },
-    fuzzy = { implementation = 'prefer_rust_with_warning' },
+    version = 'v0.13.1',
   },
 }

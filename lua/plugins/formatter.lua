@@ -10,7 +10,6 @@ return {
           json = { 'prettier' },
           lua = { 'stylua' },
           markdown = { 'prettier' },
-          sql = { 'sql_formatter' },
           toml = { 'taplo' },
           typescript = { 'prettier' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },

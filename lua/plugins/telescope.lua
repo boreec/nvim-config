@@ -9,6 +9,9 @@ return {
           borderchars = { '═', '║', '═', '║', '╔', '╗', '╝', '╚' },
           file_ignore_patterns = { 'node_modules', '.git', 'vendor' },
         },
+        extensions = {
+          fzf = { fuzzy = false },
+        },
       })
     end,
   },

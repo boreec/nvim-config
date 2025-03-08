@@ -14,16 +14,22 @@ local telescope = require('telescope.builtin')
 local telescope_mappings = {
   ['<leader>ff'] = telescope.find_files,
   ['<leader>fg'] = telescope.live_grep,
-  ['<leader>fb'] = telescope.buffers,
 }
+
+vim.keymap.set('n', '<leader>fb', function()
+  telescope.buffers({
+    sort_mru = true,
+    ignore_current_buffer = true,
+  })
+end)
+
 for key, action in pairs(telescope_mappings) do
   vim.keymap.set('n', key, action, opt)
 end
 
 -- === LSP-Specific Mappings (Only When an LSP Attaches) ===
 vim.api.nvim_create_autocmd('LspAttach', {
-  callback = function(args)
-    local lsp_opts = { noremap = true, silent = true, buffer = args.buf }
+  callback = function()
     local lsp_mappings = {
       ['gd'] = telescope.lsp_definitions,
       ['gi'] = telescope.lsp_implementations,
@@ -32,7 +38,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
       ['gr'] = telescope.lsp_references,
     }
     for key, action in pairs(lsp_mappings) do
-      vim.keymap.set('n', key, action, lsp_opts)
+      vim.keymap.set('n', key, action, {})
     end
   end,
 })

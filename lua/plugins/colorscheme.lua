@@ -1,10 +1,12 @@
 return {
   {
-    'rebelot/kanagawa.nvim',
+    'projekt0n/github-nvim-theme',
+    name = 'github-theme',
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd([[colorscheme kanagawa-wave]])
+      require('github-theme').setup({})
+      vim.cmd('colorscheme github_dark')
     end,
   },
 }

@@ -1,16 +1,15 @@
 # Neovim Configuration
 
-- [Neovim Configuration](#neovim-configuration)
-  - [How to use](#how-to-use)
-  - [Contents](#contents)
-    - [Plugin manager](#plugin-manager)
-    - [Colorscheme](#colorscheme)
-    - [Languages support](#languages-support)
-      - [Syntax highlighting](#syntax-highlighting)
-      - [LSP (Language Server Protocol)](#lsp-language-server-protocol)
-      - [Formatting](#formatting)
-      - [Completion](#completion)
-    - [Searching](#searching)
+- [How to use](#how-to-use)
+- [Contents](#contents)
+- [Plugin manager](#plugin-manager)
+- [Colorscheme](#colorscheme)
+- [Languages support](#languages-support)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [LSP (Language Server Protocol)](#lsp-language-server-protocol)
+  - [Formatting](#formatting)
+  - [Completion](#completion)
+- [Searching](#searching)
 
 This repository contains my personal neovim setup. While I strive to keep it
 clean and functional, I can not guarantee that everything will always work
@@ -65,10 +64,11 @@ documentation:
 
 ### Colorscheme
 
-The main colorscheme is `kanagawa-wave` from
-[kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim).
+The main colorscheme is `github_dark` from
+[github nvim themes](https://github.com/projekt0n/github-nvim-theme) and is
+configured in `lua/plugins/colorscheme.lua`.
 
-It is configured in `lua/plugins/colorscheme.lua`.
+![github_dark](https://github.com/projekt0n/github-nvim-theme/assets/24286590/0e6525ef-8444-4097-855c-c2a9257a6a2f)
 
 ### Languages support
 
@@ -134,7 +134,6 @@ and offer support for:
 - markdown with `prettier`
 - toml with `taplo`
 - typescript with `prettier`
-- sql with `sql-formatter`
 
 #### Completion
 

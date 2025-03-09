@@ -4,18 +4,18 @@ This repository contains my personal neovim setup. While I strive to keep it
 clean and functional, I can not guarantee that everything will always work
 perfectly. Use it at your own risk.
 
-- [How to use](#🚀-how-to-use)
-- [Contents](#📦-contents)
-- [Plugin Manager](#🔌plugin-manager)
-- [Colorscheme](#🎨-colorscheme)
-- [Languages support](#📚-languages-support)
-  - [Syntax highlighting](#🔦-syntax-highlighting)
-  - [LSP (Language Server Protocol)](#👅-lsp-language-server-protocol)
-  - [Formatting](#📏-formatting)
-  - [Completion](#🧩completion)
-- [Navigation](#navigation)
-  - [Telescope](#🔭-telescope)
-  - [Harpoon](#🔱-harpoon)
+- [🚀 How to use](#🚀-how-to-use)
+- [📦 Contents](#📦-contents)
+- [🔌 Plugin Manager](#🔌-plugin-manager)
+- [🎨 Colorscheme](#🎨-colorscheme)
+- [📚 Languages support](#📚-languages-support)
+  - [🔦 Syntax highlighting](#🔦-syntax-highlighting)
+  - [👅 LSP (Language Server Protocol)](#👅-lsp-language-server-protocol)
+  - [📏 Formatting](#📏-formatting)
+  - [🧩 Completion](#🧩-completion)
+- [⛵ Navigation](#navigation)
+  - [🔭 Telescope](#🔭-telescope)
+  - [🔱 Harpoon](#🔱-harpoon)
 
 ## 🚀 How to use
 
@@ -39,7 +39,7 @@ formatters.
 
 ## 📦 Contents
 
-### 🔌Plugin Manager
+### 🔌 Plugin Manager
 
 The plugins are managed using [lazy.nvim](https://github.com/folke/lazy.nvim).
 The configuration follows the structure recommended by the official
@@ -140,7 +140,7 @@ and offer support for:
 
 The formatter are ran automatically when saving the buffer.
 
-#### 🧩Completion
+#### 🧩 Completion
 
 Syntax completion is managed by the plugin
 [blink.cmp](https://github.com/saghen/blink.cmp) and configured in

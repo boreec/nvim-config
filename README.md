@@ -6,14 +6,16 @@ perfectly. Use it at your own risk.
 
 - [How to use](#🚀-how-to-use)
 - [Contents](#📦-contents)
-- [Plugin manager](#plugin-manager)
+- [Plugin Manager](#🔌plugin-manager)
 - [Colorscheme](#🎨-colorscheme)
-- [Languages support](#languages-support)
-  - [Syntax highlighting](#syntax-highlighting)
-  - [LSP (Language Server Protocol)](#lsp-language-server-protocol)
-  - [Formatting](#formatting)
-  - [Completion](#completion)
-- [Searching](#searching)
+- [Languages support](#📚-languages-support)
+  - [Syntax highlighting](#🔦-syntax-highlighting)
+  - [LSP (Language Server Protocol)](#👅-lsp-language-server-protocol)
+  - [Formatting](#📏-formatting)
+  - [Completion](#🧩completion)
+- [Navigation](#navigation)
+  - [Telescope](#🔭-telescope)
+  - [Harpoon](#🔱-harpoon)
 
 ## 🚀 How to use
 
@@ -37,7 +39,7 @@ formatters.
 
 ## 📦 Contents
 
-### Plugin manager
+### 🔌Plugin Manager
 
 The plugins are managed using [lazy.nvim](https://github.com/folke/lazy.nvim).
 The configuration follows the structure recommended by the official
@@ -55,6 +57,7 @@ documentation:
 │       ├── colorscheme.lua  # Plugins for colorscheme themes
 │       ├── completetion.lua # Plugins for word completions
 │       ├── formatter.lua    # Plugins for configuring languages formatter
+│       ├── harpoon.lua      # Plugin for quickly navigating between a set of files
 │       ├── lsp.lua          # Plugins for setting up LSPs
 │       ├── telescope.lua    # Plugin for fuzzy finding and searching
 │       └── treesitter.lua   # Plugins for language syntax highlighting
@@ -70,9 +73,9 @@ configured in `lua/plugins/colorscheme.lua`.
 
 ![github_dark](https://github.com/projekt0n/github-nvim-theme/assets/24286590/0e6525ef-8444-4097-855c-c2a9257a6a2f)
 
-### Languages support
+### 📚 Languages support
 
-#### Syntax highlighting
+#### 🔦 Syntax highlighting
 
 Language syntax highlighting is handled by
 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -101,7 +104,7 @@ and configured for:
 - [xml](https://github.com/tree-sitter-grammars/tree-sitter-xml)
 - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)
 
-#### LSP (Language Server Protocol)
+#### 👅 LSP (Language Server Protocol)
 
 LSPs are handled by the combination of plugins:
 
@@ -119,7 +122,7 @@ LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
 - lua via `lua_ls`
 - typescript via `ts_ls`
 
-#### Formatting
+#### 📏 Formatting
 
 Language formatting is handled by
 [conform.nvim](https://github.com/stevearc/conform.nvim).
@@ -137,14 +140,26 @@ and offer support for:
 
 The formatter are ran automatically when saving the buffer.
 
-#### Completion
+#### 🧩Completion
 
 Syntax completion is managed by the plugin
 [blink.cmp](https://github.com/saghen/blink.cmp) and configured in
 `lua/plugins/completion.lua`. For now only the LSP is used as a completion
 source.
 
-### Searching
+### ⛵ Navigation
 
-Searching the filesystem, files content or the buffers is handled by
-[telescope](https://github.com/nvim-telescope/telescope.nvim).
+#### 🔭 Telescope
+
+[Telescope](https://github.com/nvim-telescope/telescope.nvim) is used for
+searching trough the file systems, files content or the opened buffers. Its
+behavior is configured in `lua/plugins/telescope.lua`
+
+#### 🔱 Harpoon
+
+[Harpoon v2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) is used
+to manage a small set of files and quickly switch between them. It is
+configured in `lua/plugins/harpoon.lua`.
+
+Note: May be changed in the near future with
+[snipe](https://github.com/leath-dub/snipe.nvim).

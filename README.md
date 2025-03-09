@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # ✨ Neovim Configuration
 
 This repository contains my personal neovim setup. While I strive to keep it

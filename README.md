@@ -66,7 +66,9 @@ documentation:
 │       ├── lsp.lua          # Plugins for setting up LSPs
 │       ├── telescope.lua    # Plugin for fuzzy finding and searching
 │       └── treesitter.lua   # Plugins for language syntax highlighting
-├── stylua.toml              # Formatting options for Lua files in the repository
+├── .gitignore               # File and directory patterns not tracked by GIT
+├── .stylua.toml             # Formatting options for Lua files in the repository
+├── LICENSE.md               # Details on using, modifying and sharing the code
 └── README.md                # You are here
 ```
 
@@ -138,7 +140,7 @@ and offer support for:
 - go with `gofumpt`
 - graphql with `prettier`
 - json with `prettier`
-- lua with `stylua` (this repository uses `stylua.toml`)
+- lua with `stylua` (this repository uses `.stylua.toml`)
 - markdown with `prettier`
 - toml with `taplo`
 - typescript with `prettier`

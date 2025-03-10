@@ -15,6 +15,7 @@ return {
           'jsonls',
           'lua_ls',
           'marksman',
+          'rust_analyzer',
           'ts_ls',
         },
       })
@@ -44,6 +45,7 @@ return {
           },
         },
         marksman = {},
+        rust_analyzer = {},
         ts_ls = {},
       },
     },

@@ -20,7 +20,7 @@ perfectly. Use it at your own risk.
   - [🧩 Completion](#🧩-completion)
 - [⛵ Navigation](#navigation)
   - [🔭 Telescope](#🔭-telescope)
-  - [🔱 Harpoon](#🔱-harpoon)
+  - [🔱 Arrow](#🔱-arrow)
 
 ## 🚀 How to use
 
@@ -59,10 +59,10 @@ documentation:
 │   │   ├── mappings.lua     # All key mappings
 │   │   └── options.lua      # Configuration for vim.opt settings
 │   └── plugins              # Subdirectory for plugins
+│       ├── bookmark.lua     # Plugin to bookmark and navigate between files
 │       ├── colorscheme.lua  # Plugins for colorscheme themes
 │       ├── completetion.lua # Plugins for word completions
 │       ├── formatter.lua    # Plugins for configuring languages formatter
-│       ├── harpoon.lua      # Plugin for quickly navigating between a set of files
 │       ├── lsp.lua          # Plugins for setting up LSPs
 │       ├── telescope.lua    # Plugin for fuzzy finding and searching
 │       └── treesitter.lua   # Plugins for language syntax highlighting
@@ -162,11 +162,11 @@ source.
 searching trough the file systems, files content or the opened buffers. Its
 behavior is configured in `lua/plugins/telescope.lua`
 
-#### 🔱 Harpoon
+#### 🔱 Arrow
 
-[Harpoon v2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) is used
+[Arrow](https://github.com/otavioschwanck/arrow.nvim) is used
 to manage a small set of files and quickly switch between them. It is
-configured in `lua/plugins/harpoon.lua`.
+configured in `lua/plugins/bookmark.lua`.
 
 Note: May be changed in the near future with
 [snipe](https://github.com/leath-dub/snipe.nvim).

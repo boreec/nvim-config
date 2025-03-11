@@ -13,7 +13,6 @@ return {
           fzf = { fuzzy = false },
         },
       })
-      require('telescope').load_extension('harpoon')
     end,
   },
   {

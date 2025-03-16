@@ -17,6 +17,8 @@ return {
           'marksman',
           'pyright',
           'rust_analyzer',
+          'terraformls',
+          'tflint',
           'ts_ls',
         },
       })
@@ -49,6 +51,8 @@ return {
         pyright = {},
         ruff = {},
         rust_analyzer = {},
+        terraformls = {},
+        tflint = {},
         ts_ls = {},
       },
     },

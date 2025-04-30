@@ -73,6 +73,7 @@ return {
           'jsonls',
           'prettier',
           'rust_analyzer',
+          'rustfmt',
           'ruff',
           'stylua',
           'sql-formatter',

@@ -2,6 +2,7 @@ return {
   -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
+    version = 'v2.0.0',
     config = function()
       require('mason').setup()
     end,
@@ -9,6 +10,7 @@ return {
   -- Plugin extension to make Mason easier to use with nvim-lspconfig.
   {
     'williamboman/mason-lspconfig.nvim',
+    version = 'v2.0.0',
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
@@ -68,6 +70,7 @@ return {
   -- Plugin to install required linters and formatters.
   {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
+    commit = '75d60a8f928decd8b38897f80849768b7c540a5b',
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {

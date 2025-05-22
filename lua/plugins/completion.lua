@@ -12,6 +12,6 @@ return {
         default = { 'lsp' },
       },
     },
-    version = 'v1.1.1',
+    version = 'v1.3.1',
   },
 }

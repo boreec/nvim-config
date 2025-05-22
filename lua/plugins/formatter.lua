@@ -1,6 +1,7 @@
 return {
   {
     'stevearc/conform.nvim',
+    version = 'v9.0.0',
     event = { 'BufWritePre' },
     config = function()
       require('conform').setup({

@@ -1,10 +1,12 @@
 return {
+  -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
     config = function()
       require('mason').setup()
     end,
   },
+  -- Plugin extension to make Mason easier to use with nvim-lspconfig.
   {
     'williamboman/mason-lspconfig.nvim',
     config = function()
@@ -16,7 +18,6 @@ return {
           'lua_ls',
           'marksman',
           'pyright',
-          'rust_analyzer',
           'terraformls',
           'tflint',
           'ts_ls',
@@ -28,6 +29,7 @@ return {
       'williamboman/mason.nvim',
     },
   },
+  -- Plugin to setup LSP servers.
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
@@ -50,7 +52,6 @@ return {
         marksman = {},
         pyright = {},
         ruff = {},
-        rust_analyzer = {},
         terraformls = {},
         tflint = {},
         ts_ls = {},
@@ -64,6 +65,7 @@ return {
       end
     end,
   },
+  -- Plugin to install required linters and formatters.
   {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     config = function()
@@ -72,8 +74,6 @@ return {
           'gofumpt',
           'jsonls',
           'prettier',
-          'rust_analyzer',
-          'rustfmt',
           'ruff',
           'stylua',
           'sql-formatter',
@@ -82,5 +82,11 @@ return {
       })
     end,
     dependencies = { 'williamboman/mason.nvim' },
+  },
+  -- Plugin dedicated to the rust language, operates on its own.
+  {
+    'mrcjkb/rustaceanvim',
+    version = '6.2.0',
+    lazy = false,
   },
 }

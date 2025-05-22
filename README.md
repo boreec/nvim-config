@@ -15,7 +15,7 @@ perfectly. Use it at your own risk.
 - [🎨 Colorscheme](#🎨-colorscheme)
 - [📚 Languages support](#📚-languages-support)
   - [🔦 Syntax highlighting](#🔦-syntax-highlighting)
-  - [👅 LSP (Language Server Protocol)](#👅-lsp-language-server-protocol)
+  - [👅 LSP servers](#👅-lsp-servers)
   - [📏 Formatting](#📏-formatting)
   - [🧩 Completion](#🧩-completion)
 - [⛵ Navigation](#navigation)
@@ -126,9 +126,11 @@ LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
 
 - json via `jsonls`
 - go via `gopls`
-- graphql via `graphql-language-service-cli` (a root configuration is required
-  in the project)
+- graphql via `graphql-language-service-cli` (a root configuration file is
+  required in the project)
 - lua via `lua_ls`
+- rust via `rust-analyzer`, configured automatically by
+  [rustacean](https://github.com/mrcjkb/rustaceanvim)
 - typescript via `ts_ls`
 
 #### 📏 Formatting

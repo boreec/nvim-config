@@ -4,9 +4,7 @@ return {
     version = 'v0.9.3',
     build = ':TSUpdate',
     config = function()
-      local configs = require('nvim-treesitter.configs')
-
-      configs.setup({
+      require('nvim-treesitter.configs').setup({
         additional_vim_regex_highlighting = false,
         -- The listed parsers MUST always be installed
         ensure_installed = {
@@ -58,7 +56,18 @@ return {
       vim.api.nvim_set_hl(0, '@markup.link.url.markdown_inline', { undercurl = false })
     end,
     dependencies = {
-      'nvim-treesitter/nvim-treesitter-context',
+      {
+        'nvim-treesitter/nvim-treesitter-context',
+        commit = '4976d8b90401cba9b85f6861e4e5a6edef2f2086',
+        config = function()
+          require('treesitter-context').setup({
+            enable = true,
+            line_numbers = true,
+            mode = 'topline',
+            multiline_threshold = 5,
+          })
+        end,
+      },
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
   },

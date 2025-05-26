@@ -15,7 +15,7 @@ perfectly. Use it at your own risk.
 - [🎨 Colorscheme](#🎨-colorscheme)
 - [📚 Languages support](#📚-languages-support)
   - [🔦 Syntax highlighting](#🔦-syntax-highlighting)
-  - [👅 LSP (Language Server Protocol)](#👅-lsp-language-server-protocol)
+  - [👅 LSP servers](#👅-lsp-servers)
   - [📏 Formatting](#📏-formatting)
   - [🧩 Completion](#🧩-completion)
 - [⛵ Navigation](#navigation)
@@ -24,7 +24,7 @@ perfectly. Use it at your own risk.
 
 ## 🚀 How to use
 
-Backup your existing nvim config (optional):
+Backup your existing nvim config:
 
 ```console
 mv ~/.config/nvim ~/nvim-backup
@@ -36,11 +36,11 @@ Clone this repository to the nvim directory:
 git clone --depth 1 https://github.com/boreec/nvim-config ~/.config/nvim
 ```
 
-Open neovim, and run `:Lazy`, follow the screen instructions to update and sync
+Open neovim, and run `:Lazy`, follow the screen instructions to update/sync
 the plugins.
 
-When reopening neovim, Mason should automatically fetch the LSPs, linters and
-formatters.
+When reopening neovim, Mason fetches automatically most of required tools.
+For some plugins you may need to install dependencies yourself.
 
 ## 📦 Contents
 
@@ -63,6 +63,7 @@ documentation:
 │       ├── colorscheme.lua  # Plugins for colorscheme themes
 │       ├── completetion.lua # Plugins for word completions
 │       ├── formatter.lua    # Plugins for configuring languages formatter
+│       ├── kubernetes.lua   # Plugins to interact with Kubernetes cluster
 │       ├── lsp.lua          # Plugins for setting up LSPs
 │       ├── telescope.lua    # Plugin for fuzzy finding and searching
 │       └── treesitter.lua   # Plugins for language syntax highlighting
@@ -111,22 +112,25 @@ and configured for:
 - [xml](https://github.com/tree-sitter-grammars/tree-sitter-xml)
 - [yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml)
 
-#### 👅 LSP (Language Server Protocol)
+#### 👅 LSP servers
 
-LSPs are handled by the combination of plugins:
+LSP servers are handled by the combination of plugins:
 
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [rustacean](https://github.com/mrcjkb/rustaceanvim)
 
 LSPs are configured in `lua/plugins/lsp.lua` and offers support for:
 
 - json via `jsonls`
 - go via `gopls`
-- graphql via `graphql-language-service-cli` (a root configuration is required
-  in the project)
+- graphql via `graphql-language-service-cli` (a root configuration file is
+  required in the project)
 - lua via `lua_ls`
+- rust via `rust-analyzer`, configured automatically by
+  [rustacean](https://github.com/mrcjkb/rustaceanvim)
 - typescript via `ts_ls`
 
 #### 📏 Formatting

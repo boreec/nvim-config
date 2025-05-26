@@ -1,6 +1,7 @@
 return {
   {
     'stevearc/conform.nvim',
+    version = 'v9.0.0',
     event = { 'BufWritePre' },
     config = function()
       require('conform').setup({
@@ -9,8 +10,8 @@ return {
           json = { 'prettier' },
           lua = { 'stylua' },
           markdown = { 'prettier' },
+          rust = { 'rustfmt' },
           toml = { 'taplo' },
-          -- typescript = { 'biome' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

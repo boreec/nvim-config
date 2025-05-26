@@ -1,12 +1,16 @@
 return {
+  -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
+    version = 'v2.0.0',
     config = function()
       require('mason').setup()
     end,
   },
+  -- Plugin extension to make Mason easier to use with nvim-lspconfig.
   {
     'williamboman/mason-lspconfig.nvim',
+    version = 'v2.0.0',
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
@@ -16,7 +20,6 @@ return {
           'lua_ls',
           'marksman',
           'pyright',
-          'rust_analyzer',
           'terraformls',
           'tflint',
           'ts_ls',
@@ -28,10 +31,11 @@ return {
       'williamboman/mason.nvim',
     },
   },
+  -- Plugin to setup LSP servers.
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
-    version = 'v1.7.0',
+    version = 'v2.1.0',
     opts = {
       servers = {
         gopls = {
@@ -51,24 +55,23 @@ return {
         marksman = {},
         pyright = {},
         ruff = {},
-        rust_analyzer = {},
         terraformls = {},
         tflint = {},
         ts_ls = {},
       },
     },
     config = function(_, opts)
-      local lspconfig = require('lspconfig')
       for server, config in pairs(opts.servers) do
-        -- passing config.capabilities to blink.cmp merges with the capabilities in your
-        -- `opts[server].capabilities, if you've defined it
         config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-        lspconfig[server].setup(config)
+        vim.lsp.config(server, config)
+        vim.lsp.enable(server)
       end
     end,
   },
+  -- Plugin to install required linters and formatters.
   {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
+    commit = '75d60a8f928decd8b38897f80849768b7c540a5b',
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
@@ -85,5 +88,11 @@ return {
       })
     end,
     dependencies = { 'williamboman/mason.nvim' },
+  },
+  -- Plugin dedicated to the rust language, operates on its own.
+  {
+    'mrcjkb/rustaceanvim',
+    version = '6.2.0',
+    lazy = false,
   },
 }

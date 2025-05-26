@@ -5,13 +5,12 @@ return {
     config = function()
       require('conform').setup({
         formatters_by_ft = {
-          go = { 'gofumpt' },
-          graphql = { 'prettier' },
+          go = { 'gofumpt', 'goimports' },
           json = { 'prettier' },
           lua = { 'stylua' },
           markdown = { 'prettier' },
           toml = { 'taplo' },
-          typescript = { 'prettier' },
+          -- typescript = { 'biome' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

@@ -36,6 +36,7 @@ return {
       servers = {
         gopls = {
           gofumpt = true,
+          goimports = true,
         },
         graphql = {},
         jsonls = {},
@@ -71,7 +72,9 @@ return {
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
+          'biome',
           'gofumpt',
+          'goimports',
           'jsonls',
           'prettier',
           'ruff',

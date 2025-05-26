@@ -12,6 +12,7 @@ return {
           'bash',
           'c',
           'cpp',
+          'csv',
           'dockerfile',
           'gitignore',
           'go',

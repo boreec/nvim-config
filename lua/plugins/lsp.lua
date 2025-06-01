@@ -35,7 +35,7 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
-    version = 'v2.1.0',
+    version = 'v2.2.0',
     opts = {
       servers = {
         gopls = {
@@ -92,7 +92,7 @@ return {
   -- Plugin dedicated to the rust language, operates on its own.
   {
     'mrcjkb/rustaceanvim',
-    version = '6.2.0',
+    version = '6.3.0',
     lazy = false,
   },
 }

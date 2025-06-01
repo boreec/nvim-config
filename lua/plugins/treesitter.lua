@@ -1,7 +1,7 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter',
-    version = 'v0.9.3',
+    version = 'v10.0.0',
     build = ':TSUpdate',
     config = function()
       require('nvim-treesitter.configs').setup({
@@ -59,7 +59,7 @@ return {
     dependencies = {
       {
         'nvim-treesitter/nvim-treesitter-context',
-        commit = '4976d8b90401cba9b85f6861e4e5a6edef2f2086',
+        version = 'v1.0.0',
         config = function()
           require('treesitter-context').setup({
             enable = true,

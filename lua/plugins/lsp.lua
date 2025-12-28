@@ -2,7 +2,7 @@ return {
   -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
-    version = 'v2.0.0',
+    version = 'v2.1.0',
     config = function()
       require('mason').setup()
     end,
@@ -10,12 +10,12 @@ return {
   -- Plugin extension to make Mason easier to use with nvim-lspconfig.
   {
     'williamboman/mason-lspconfig.nvim',
-    version = 'v2.0.0',
+    version = 'v2.1.0',
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
           'gopls',
-          'graphql',
+          -- 'graphql',
           'jsonls',
           'lua_ls',
           'marksman',
@@ -42,7 +42,7 @@ return {
           gofumpt = true,
           goimports = true,
         },
-        graphql = {},
+        -- graphql = {},
         jsonls = {},
         lua_ls = {
           settings = {

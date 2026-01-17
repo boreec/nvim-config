@@ -92,7 +92,7 @@ return {
   -- Plugin dedicated to the rust language, operates on its own.
   {
     'mrcjkb/rustaceanvim',
-    version = '6.3.0',
+    version = '7.0.8',
     lazy = false,
   },
 }

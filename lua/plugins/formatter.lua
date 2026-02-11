@@ -13,6 +13,7 @@ return {
           markdown = { 'prettier' },
           rust = { 'rustfmt' },
           toml = { 'taplo' },
+          typescript = { 'biome' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

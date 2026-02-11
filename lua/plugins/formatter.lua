@@ -7,10 +7,10 @@ return {
       require('conform').setup({
         formatters_by_ft = {
           go = { 'gofumpt', 'goimports' },
-          html = { 'biome' },
+          html = { 'prettier' },
           json = { 'biome' },
           lua = { 'stylua' },
-          markdown = { 'biome' },
+          markdown = { 'prettier' },
           rust = { 'rustfmt' },
           toml = { 'taplo' },
           typescript = { 'biome' },

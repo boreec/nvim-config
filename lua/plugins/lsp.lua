@@ -2,7 +2,7 @@ return {
   -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
-    version = 'v2.1.0',
+    version = 'v2.2.1',
     config = function()
       require('mason').setup()
     end,

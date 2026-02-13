@@ -19,10 +19,10 @@ return {
           'jsonls',
           'lua_ls',
           'marksman',
-          'pyright',
           'terraformls',
           'tflint',
           'ts_ls',
+          'ty',
         },
       })
     end,
@@ -35,7 +35,7 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
-    version = 'v2.2.0',
+    version = 'v2.3.0',
     opts = {
       servers = {
         gopls = {
@@ -53,11 +53,11 @@ return {
           },
         },
         marksman = {},
-        pyright = {},
         ruff = {},
         terraformls = {},
         tflint = {},
         ts_ls = {},
+        ty = {},
       },
     },
     config = function(_, opts)
@@ -84,6 +84,7 @@ return {
           'stylua',
           'sql-formatter',
           'taplo',
+          'ty',
         },
       })
     end,
@@ -92,7 +93,7 @@ return {
   -- Plugin dedicated to the rust language, operates on its own.
   {
     'mrcjkb/rustaceanvim',
-    version = '6.3.0',
+    version = '6.4.1',
     lazy = false,
   },
 }

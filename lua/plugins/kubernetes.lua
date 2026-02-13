@@ -1,10 +1,11 @@
 return {
   {
     'ramilito/kubectl.nvim',
-    version = 'v2.0.0',
+    version = 'v2.39.0',
     config = function()
       require('kubectl').setup()
     end,
+    dependencies = 'saghen/blink.download',
     opts = {},
     cmd = { 'Kubectl', 'Kubectx', 'Kubens' },
     keys = {

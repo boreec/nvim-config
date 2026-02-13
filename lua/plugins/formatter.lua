@@ -10,8 +10,10 @@ return {
           json = { 'prettier' },
           lua = { 'stylua' },
           markdown = { 'prettier' },
+          python = { 'ruff' },
           rust = { 'rustfmt' },
           toml = { 'taplo' },
+          typescript = { 'biome' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

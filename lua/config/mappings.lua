@@ -32,7 +32,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     local lsp_mappings = {
       ['gd'] = telescope.lsp_definitions,
       ['gi'] = telescope.lsp_implementations,
-      ['<leader>d'] = telescope.diagnostics,
+      -- ['<leader>d'] = telescope.diagnostics,
       ['<leader>s'] = telescope.lsp_document_symbols,
       ['gr'] = telescope.lsp_references,
     }

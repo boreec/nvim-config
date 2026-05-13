@@ -1,0 +1,22 @@
+lua/config/lazy.lua
+  b717e6ed9a77cf1b 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "d0d2c6d4ca8640238f9d7452bb461488213b7b71",
+  "prompts": {
+    "b717e6ed9a77cf1b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fa701807-180c-4c37-a9dc-bbc0e3da0606",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Cyprien Borée <cyprien.boree@tensorenergy.jp>",
+      "total_additions": 1,
+      "total_deletions": 2,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}

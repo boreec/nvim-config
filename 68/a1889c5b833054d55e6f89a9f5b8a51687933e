@@ -1,0 +1,19 @@
+lua/plugins/treesitter.lua
+  s_437f4f18388dbd::t_e19da2f88a4250 4-5,7-51,53,68-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "68a1889c5b833054d55e6f89a9f5b8a51687933e",
+  "prompts": {},
+  "sessions": {
+    "s_437f4f18388dbd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "35b4b02c-ffbc-45c6-a4bb-433d6147f136",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Cyprien Borée <cyprien.boree@tensorenergy.jp>"
+    }
+  }
+}

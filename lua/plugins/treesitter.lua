@@ -42,7 +42,6 @@ return {
     dependencies = {
       {
         'nvim-treesitter/nvim-treesitter-context',
-        version = 'v1.0.0',
         config = function()
           require('treesitter-context').setup({
             enable = true,

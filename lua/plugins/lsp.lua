@@ -19,9 +19,9 @@ return {
           'jsonls',
           'lua_ls',
           'marksman',
-          'pyright',
           'terraformls',
           'tflint',
+          'ty',
           'zls',
         },
       })
@@ -35,7 +35,7 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
-    version = 'v2.2.0',
+    version = 'v2.3.0',
     opts = {
       servers = {
         gopls = {
@@ -53,10 +53,10 @@ return {
           },
         },
         marksman = {},
-        pyright = {},
         ruff = {},
         terraformls = {},
         tflint = {},
+        ty = {},
         zls = {
           settings = {
             zls = {
@@ -91,6 +91,7 @@ return {
           'stylua',
           'sql-formatter',
           'taplo',
+          'ty',
         },
       })
     end,

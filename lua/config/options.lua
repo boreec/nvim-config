@@ -21,3 +21,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.termguicolors = true
+
+-- no trailing newlines
+vim.opt.fixendofline = false
+vim.opt.endofline = false

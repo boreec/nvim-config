@@ -11,6 +11,7 @@ return {
           json = { 'biome' },
           lua = { 'stylua' },
           markdown = { 'prettier' },
+          python = { 'ruff' },
           rust = { 'rustfmt' },
           toml = { 'taplo' },
           typescript = { 'biome' },

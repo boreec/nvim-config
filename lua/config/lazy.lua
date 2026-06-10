@@ -22,9 +22,39 @@ require('lazy').setup({
     -- import your plugins
     { import = 'plugins' },
   },
-  -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
-  -- install = { colorscheme = { 'habamax' } },
-  -- automatically check for plugin updates
+  rocks = { enabled = false },
+  concurrency = 8,
   checker = { enabled = false },
+})
+
+-- Workaround for a lazy.nvim render stall on Neovim 0.12 where the update window
+-- freezes on "fetch" even though plugins finish updating. Redraw the Lazy window
+-- directly while it is open.
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'lazy',
+  callback = function(ev)
+    local timer = assert((vim.uv or vim.loop).new_timer())
+    timer:start(
+      100,
+      100,
+      vim.schedule_wrap(function()
+        local visible = vim.api.nvim_buf_is_valid(ev.buf)
+          and vim.bo[ev.buf].filetype == 'lazy'
+          and vim.fn.bufwinid(ev.buf) ~= -1
+        if not visible then
+          if not timer:is_closing() then
+            timer:stop()
+            timer:close()
+          end
+          return
+        end
+        local ok, view = pcall(require, 'lazy.view')
+        if ok and view.view and view.view.render then
+          pcall(function()
+            view.view.render:update()
+          end)
+        end
+      end)
+    )
+  end,
 })

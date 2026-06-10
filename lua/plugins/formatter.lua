@@ -14,6 +14,7 @@ return {
           rust = { 'rustfmt' },
           toml = { 'taplo' },
           typescript = { 'biome' },
+          zig = { 'zigfmt' },
           ['_'] = { 'trim_whitespace', 'trim_newlines' },
         },
         format_on_save = {

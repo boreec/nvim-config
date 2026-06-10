@@ -22,6 +22,7 @@ return {
           'pyright',
           'terraformls',
           'tflint',
+          'zls',
         },
       })
     end,
@@ -56,6 +57,14 @@ return {
         ruff = {},
         terraformls = {},
         tflint = {},
+        zls = {
+          settings = {
+            zls = {
+              -- surfaces compiler diagnostics on save (Zig's lint)
+              enable_build_on_save = true,
+            },
+          },
+        },
       },
     },
     config = function(_, opts)

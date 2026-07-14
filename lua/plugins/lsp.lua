@@ -2,7 +2,7 @@ return {
   -- Plugin to manage and install LSP servers, linters and formatters.
   {
     'williamboman/mason.nvim',
-    version = 'v2.2.1',
+    version = 'v2.3.1',
     config = function()
       require('mason').setup()
     end,
@@ -10,7 +10,7 @@ return {
   -- Plugin extension to make Mason easier to use with nvim-lspconfig.
   {
     'williamboman/mason-lspconfig.nvim',
-    version = 'v2.1.0',
+    version = 'v2.3.0',
     config = function()
       require('mason-lspconfig').setup({
         ensure_installed = {
@@ -35,12 +35,15 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = { 'saghen/blink.cmp' },
-    version = 'v2.3.0',
+    version = 'v2.10.0',
     opts = {
       servers = {
         gopls = {
-          gofumpt = true,
-          goimports = true,
+          settings = {
+            gopls = {
+              gofumpt = true,
+            },
+          },
         },
         -- graphql = {},
         jsonls = {},
@@ -100,7 +103,7 @@ return {
   -- Plugin dedicated to the rust language, operates on its own.
   {
     'mrcjkb/rustaceanvim',
-    version = '7.0.8',
+    version = '9.0.5',
     lazy = false,
   },
   -- Plugin dedicated to the typescript language, operates on its own.

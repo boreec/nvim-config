@@ -1,7 +1,7 @@
 return {
   {
     'ramilito/kubectl.nvim',
-    version = 'v2.39.0',
+    version = 'v2.43.2',
     config = function()
       require('kubectl').setup()
     end,

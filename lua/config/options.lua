@@ -25,3 +25,8 @@ vim.opt.termguicolors = true
 -- no trailing newlines
 vim.opt.fixendofline = false
 vim.opt.endofline = false
+
+-- treesitter folds (foldexpr is wired up per-buffer in plugins/treesitter.lua).
+-- Keep everything unfolded on open; fold explicitly with zc/za.
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99

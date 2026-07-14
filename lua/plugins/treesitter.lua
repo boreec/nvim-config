@@ -66,12 +66,18 @@ return {
         require('nvim-treesitter').install(to_install)
       end
 
-      -- Enable highlight + indent per buffer. The pcall skips filetypes with
-      -- no parser so we don't clobber their indentexpr.
+      -- Enable highlight + indent + folds per buffer. The pcall skips filetypes
+      -- with no parser so we don't clobber their indentexpr.
       local function start(buf)
         local lang = vim.treesitter.language.get_lang(vim.bo[buf].filetype)
         if lang and pcall(vim.treesitter.start, buf, lang) then
           vim.bo[buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+          -- foldexpr is core (0.12); it is window-local, so set it on every
+          -- window currently showing this buffer.
+          for _, win in ipairs(vim.fn.win_findbuf(buf)) do
+            vim.wo[win][0].foldmethod = 'expr'
+            vim.wo[win][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+          end
         end
       end
 
